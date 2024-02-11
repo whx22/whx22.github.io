@@ -1,3 +1,44 @@
 site_name: My Docs
 theme:
+  # Type of theme
   name: material
+  # Custom directory for the theme
+  custom_dir: overrides
+  # palette for the theme
+  palette:
+      # Palette toggle for automatic mode
+      - media: "(prefers-color-scheme)"
+        toggle:
+          icon: material/lightbulb-auto
+          name: 切换到光亮模式 
+
+      # Palette toggle for light mode
+      - media: "(prefers-color-scheme: light)"
+        scheme: default 
+        primary: light green
+        accent: light green
+        toggle:
+          icon: material/lightbulb
+          name: 切换到黑暗模式
+
+      # Palette toggle for dark modex 
+      - media: "(prefers-color-scheme: dark)"
+        scheme: slate
+        primary: green
+        accent: green
+        toggle:
+          icon: material/lightbulb-outline
+          name: 切换到跟随系统模式
+  # Change the language
+  language: zh
+  # Change the logo and icons
+  logo: images/flower.png
+  favicon: images/flower.png
+  icon:
+    previous: fontawesome/solid/angle-left
+    next: fontawesome/solid/angle-right
+# Google Analytics
+extra:
+  analytics:
+    provider: google
+    property: G-XQS5RE61EZ
