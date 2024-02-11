@@ -1,4 +1,4 @@
-site_name: My Docs
+site_name: whx's blog
 theme:
   # Type of theme
   name: material
@@ -10,7 +10,7 @@ theme:
       - media: "(prefers-color-scheme)"
         toggle:
           icon: material/lightbulb-auto
-          name: 切换到光亮模式 
+          name: '切换到光亮模式' 
 
       # Palette toggle for light mode
       - media: "(prefers-color-scheme: light)"
@@ -19,7 +19,7 @@ theme:
         accent: light green
         toggle:
           icon: material/lightbulb
-          name: 切换到黑暗模式
+          name: '切换到黑暗模式'
 
       # Palette toggle for dark modex 
       - media: "(prefers-color-scheme: dark)"
@@ -28,7 +28,7 @@ theme:
         accent: green
         toggle:
           icon: material/lightbulb-outline
-          name: 切换到跟随系统模式
+          name: '切换到跟随系统模式'
   # Change the language
   language: zh
   # Change the logo and icons
@@ -37,8 +37,74 @@ theme:
   icon:
     previous: fontawesome/solid/angle-left
     next: fontawesome/solid/angle-right
-# Google Analytics
+    repo: fontawesome/brands/git-alt
+  # features for the theme
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - header.autohide
+    - announce.dismiss
+    - navigation.footer
+# extra
 extra:
+  # Google Analytics
   analytics:
     provider: google
     property: G-XQS5RE61EZ
+  # Social links
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/whx22
+      name: Github
+    - icon: fontawesome/brands/gitlab
+      link: https://gitlab.com/whx2
+      name: Gitlab
+    - icon: simple/gitee
+      link: https://gitee.com/whx2
+      name: Gitee
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/u/whx22
+      name: Docker
+    - icon: simple/zhihu
+      link: https://www.zhihu.com/people/qi-di-zhe-10
+      name: '知乎'
+    - icon: fontawesome/brands/bilibili
+      link: https://space.bilibili.com/441050978
+      name: Bilibili
+    - icon: simple/douban
+      link: https://www.douban.com/people/259113304/?_i=7667476jYZrZ85
+      name: '豆瓣'
+    - icon: fontawesome/brands/weibo
+      link: https://weibo.com/u/7738333047
+      name: '微博'
+    - icon: fontawesome/brands/x-twitter
+      link: https://twitter.com/whx1214774
+      name: X
+    - icon: fontawesome/brands/facebook
+      link: https://facebook.com
+      name: Facebook
+  # Generator notice
+  generator: false
+
+# Plugins
+plugins:
+  # Build-in search plugin
+  - search
+  # Build-in offline plugin
+  - offline
+  
+
+copyright: Copyright &copy; 2023 - 2024 Huxin Wang
+
+repo_url: https://github.com/whx22/whx22.github.io
+repo_name: whx22.github.io
+
+markdown_extensions:
+  
