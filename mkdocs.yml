@@ -41,9 +41,9 @@ theme:
   # features for the theme
   features:
     - navigation.tabs
-    - navigation.sections
+    # - navigation.sections
     - navigation.expand
-    - navigation.path
+    # - navigation.path
     - navigation.indexes
     - toc.follow
     - navigation.top
@@ -53,6 +53,11 @@ theme:
     - header.autohide
     - announce.dismiss
     - navigation.footer
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.tooltips
+
 # extra
 extra:
   # Google Analytics
@@ -118,6 +123,8 @@ plugins:
         - tags
   # Build-in tags plugin
   - tags
+  # light box(images needing)
+  - glightbox
 
 copyright: Copyright &copy; 2023 - 2024 Huxin Wang
 
@@ -125,10 +132,93 @@ repo_url: https://github.com/whx22/whx22.github.io
 repo_name: whx22.github.io
 
 markdown_extensions:
+  # Admonitions
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+  # Annotations
+  - attr_list
+  - md_in_html
+  # - pymdownx.superfences
+
+  # Buttons
+  # - attr_list
+
+  # Code blocks
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  # - pymdownx.superfences
+
+  # Content tabs
+  # - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  # - pymdownx.tabbed:
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+
+  # Data tables
+  - tables
+
+  # Diagrams
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+  # Footnotes
+  - footnotes
+
+  # Formatting
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+
+  # Girds
+  # - attr_list
+  # - md_in_html
+
+  # Icons, Emojis
+  # - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+  # Images
+  # - attr_list
+  # - md_in_html
+
+  # List
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+  # Math
+
+
+  # Tooltips
+  # - abbr
+  # - attr_list
+  # - pymdownx.snippets
 
 
 nav:
   - '主页': 'index.md'
   - '文章' : 
     - 'blog/index.md'
+  - '生活' :
+    - 'life/index.md'
+    - '读书笔记' :
+      - '西厢记' : 'life/books/xixiangji.md'
+      - '红楼梦' : 'life/books/hongloumeng.md'
+    - '测试页面': 'life/test.md'
   - '关于': 'about.md'
