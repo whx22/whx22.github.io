@@ -45,6 +45,7 @@ theme:
     - navigation.expand
     - navigation.path
     - navigation.indexes
+    - toc.follow
     - navigation.top
     - search.suggest
     - search.highlight
@@ -75,21 +76,27 @@ extra:
     - icon: simple/zhihu
       link: https://www.zhihu.com/people/qi-di-zhe-10
       name: '知乎'
-    - icon: fontawesome/brands/bilibili
-      link: https://space.bilibili.com/441050978
-      name: Bilibili
-    - icon: simple/douban
-      link: https://www.douban.com/people/259113304/?_i=7667476jYZrZ85
-      name: '豆瓣'
-    - icon: fontawesome/brands/weibo
-      link: https://weibo.com/u/7738333047
-      name: '微博'
-    - icon: fontawesome/brands/x-twitter
-      link: https://twitter.com/whx1214774
-      name: X
-    - icon: fontawesome/brands/facebook
-      link: https://facebook.com
-      name: Facebook
+    # - icon: fontawesome/brands/bilibili
+    #   link: https://space.bilibili.com/441050978
+    #   name: Bilibili
+    # - icon: fontawesome/brands/youtube 
+    #   link: www.youtube.com/@HuxinWang
+    #   name: Youtube
+    # - icon: fontawesome/brands/x-twitter
+    #   link: https://twitter.com/whx1214774
+    #   name: X
+    # - icon: fontawesome/brands/facebook
+    #   link: https://facebook.com
+    #   name: Facebook
+    # - icon: simple/douban
+    #   link: https://www.douban.com/people/259113304/?_i=7667476jYZrZ85
+    #   name: '豆瓣'
+    # - icon: fontawesome/brands/weibo
+    #   link: https://weibo.com/u/7738333047
+    #   name: '微博'
+    # - icon: fontawesome/brands/tiktok
+    #   link: https://www.douyin.com
+    #   name: '抖音'
   # Generator notice
   generator: false
 
@@ -99,7 +106,18 @@ plugins:
   - search
   # Build-in offline plugin
   - offline
-  
+  # Build-in blog plugin
+  - blog
+  # rss plugin (pip install mkdocs-rss-plugin)
+  - rss:
+      match_path: blog/posts/.* 
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+        - tags
+  # Build-in tags plugin
+  - tags
 
 copyright: Copyright &copy; 2023 - 2024 Huxin Wang
 
@@ -107,4 +125,10 @@ repo_url: https://github.com/whx22/whx22.github.io
 repo_name: whx22.github.io
 
 markdown_extensions:
-  
+
+
+nav:
+  - '主页': 'index.md'
+  - '文章' : 
+    - 'blog/index.md'
+  - '关于': 'about.md'
