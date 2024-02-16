@@ -2,6 +2,12 @@ site_name: whx's blog
 theme:
   # Type of theme
   name: material
+  # Changing the fonts
+  font:
+    text: 'Noto Sans Simplified Chinese'
+    # text: 'Noto Serif Simplified Chinese'
+    code: 'Fira Code'
+    # code: 'Roboto Mono'
   # Custom directory for the theme
   custom_dir: overrides
   # palette for the theme
@@ -217,8 +223,9 @@ nav:
     - 'blog/index.md'
   - '生活' :
     - 'life/index.md'
-    - '读书笔记' :
-      - '西厢记' : 'life/books/xixiangji.md'
-      - '红楼梦' : 'life/books/hongloumeng.md'
-    - '测试页面': 'life/test.md'
-  - '关于': 'about.md'
+    # - '文学爱好者' :
+      # - '西厢记赏析' : 'life/books/xixiangji.md'
+      # - '红楼梦赏析' : 'life/books/hongloumeng.md'
+  - '关于': 
+    - 'about/index.md'
+    - '测试页面': 'about/test.md'

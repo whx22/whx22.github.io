@@ -353,7 +353,7 @@ tags on separate lines and adding new lines between the tags and the content.
 
 ++ctrl+alt+del++
 
-# Grids
+## Grids
 
 <div class="grid cards" markdown>
 
