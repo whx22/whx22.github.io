@@ -69,7 +69,8 @@ extra:
   # Google Analytics
   analytics:
     provider: google
-    property: G-XQS5RE61EZ
+    property: G-XQS5RE61EZ # https://whx22.github.io
+    # property: G-XL76G6VD0Q # https://huxinwang.live
   # Social links
   social:
     - icon: fontawesome/brands/github
