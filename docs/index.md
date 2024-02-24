@@ -4,7 +4,7 @@ hide:
     - navigation
     - toc
 ---
-# ==**欢迎**== :partying_face:
+# **欢迎** :partying_face:
 
 <div class="grid cards" markdown>
 

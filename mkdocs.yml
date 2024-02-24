@@ -69,7 +69,7 @@ extra:
   # Google Analytics
   analytics:
     provider: google
-    property: G-XQS5RE61EZ # https://whx22.github.io
+    property: G-XQS5RE61EZ # https://whe22.github.io
     # property: G-XL76G6VD0Q # https://huxinwang.live
   # Social links
   social:
@@ -227,6 +227,8 @@ nav:
     # - '文学爱好者' :
       # - '西厢记赏析' : 'life/books/xixiangji.md'
       # - '红楼梦赏析' : 'life/books/hongloumeng.md'
+    - '相册' :
+      - '东湖2024-02-17' : 'life/photograph/2024-02-17.md' 
   - '关于': 
     - 'about/index.md'
     - '测试页面': 'about/test.md'
