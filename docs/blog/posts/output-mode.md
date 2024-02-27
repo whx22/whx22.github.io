@@ -9,6 +9,7 @@ tags:
   - stm32
   - 硬件
   - 输出模式
+comments: true
 ---
 
 # 推挽输出与开漏输出
