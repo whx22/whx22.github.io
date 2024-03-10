@@ -1,10 +1,10 @@
 ---
 date: 2024-02-27
+authors:
+  - whx
 categories:
   - stm32
   - 硬件
-authors:
-  - whx
 tags:
   - stm32
   - 硬件
@@ -34,7 +34,7 @@ comments: true
 
 推挽输出在许多微控制器和标准逻辑门电路中都很常见。
 
-![](../images/push-pull.png)
+![](../images/output-mode/push-pull.png)
 
 ## 开漏输出 (Open-Drain Output)
 
@@ -53,4 +53,4 @@ comments: true
 
 开漏输出在需要多个输出共享同一电平的场合（如I2C总线）或需要特殊电平转换的场合（如与5V逻辑电路接口的3.3V微控制器）中非常常见。
 
-![](../images/open-drain.png)
+![](../images/output-mode/open-drain.png)
